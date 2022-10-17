@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    flex-direction: column;
+}
+
+.card {
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+}
+
+.h1 {
+    font-family: 'Fraunces', serif;;
+}
+
+p, span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.preco-novo {
+    font-family: 'Fraunces', sans-serif;;
+}
+
+.imagem {
+    min-width: 50%;
+    height: 100%;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.card-info span {
+    color: darkgray;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-top: 30px;
+}
+
+.card-info h1 {
+    font-size: 48px;
+    letter-spacing: 2.8px;
+    line-height: 1;
+}
+
+.card-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color:darkgray;
+}
+
+.preco {
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+
+.preco h1 {
+    color: rgb(23, 100, 75);
+    font-family: 'Fraunces';
+    letter-spacing: 1.5px;
+}
+
+span {
+    margin-bottom: 25px;
+}
+
+.preco span {
+    text-decoration: line-through;
+    letter-spacing: 0;
+}
+
+.btn {
+    color: white;
+    border: none;
+    background-color: rgb(23, 100, 75);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 0 40px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn img {
+    padding-right: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(16, 53, 41);
+}
+
+.atribuicao {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 860px) {
+    .card {
+        width: 345px;
+        height: 610px;
+        flex-direction: column;
+    }
+
+    .image {
+        max-height: 40%;
+        width: 100%;
+    }
+
+    .card-info{
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+    } 
+    
+    .card-info h1 {
+        font-size: 30px;
+        color: rgb(23, 100, 75);
+        line-height: 1.0;
+        padding-right: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .card-info p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: darkgray;
+    }
+
+    .card-info span {
+        font-size: 14px;
+    }
+
+    .preco h1 {
+        color: rgb(23, 100, 75);
+    }
+
+    .preco span {
+        margin-bottom: 39px;
+    }
+}
